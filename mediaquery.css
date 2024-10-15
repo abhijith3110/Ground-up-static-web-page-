@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1024px){
+    .header-nav-bar ul {
+        gap: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .header-nav-bar{
+        display: none;
+    }
+
+}
