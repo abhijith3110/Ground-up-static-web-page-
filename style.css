@@ -1,12 +1,20 @@
-* {
-  padding: 0;
-  margin: 0 auto;
-}
-
 @font-face {
   font-family: "Gilroy";
   src: url("/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("/asserts/fonts/gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Gilroy", sans-serif;
+}
+
+/* Header */
 
 .header-container {
   max-width: 900px;
@@ -49,4 +57,72 @@
   justify-content: space-between;
   margin: 15px 0px;
   align-items: center;
+}
+
+/* Banner */
+
+.banner img {
+  width: 100%;
+}
+
+.banner-container {
+  max-width: 1538px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.banner-content-heading-main {
+  color: rgb(5, 169, 61);
+  font-size: 50.88px;
+  line-height: 69px;
+}
+
+.banner-content-heading-sub {
+  color: rgba(246, 124, 1, 1);
+  font-size: 50.88px;
+  line-height: 69px;
+}
+
+.banner-content {
+  position: absolute;
+  top: 90px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner-content-heading-para {
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy-medium", sans-serif;
+}
+
+.banner-content-heading-btn {
+  margin: 0;
+}
+
+.banner-content-heading-btn button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  border: none;
+  border-radius: 70px;
+  background: rgba(5, 169, 61, 1);
+  color: #fff;
+  padding: 16px 30px;
+}
+
+.banner-content-heading-btn button i {
+  border: 1.5px solid rgba(241, 246, 1, 1);
+  border-radius: 50%;
+  color: rgba(241, 246, 1, 1);
 }
