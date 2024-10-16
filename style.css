@@ -378,3 +378,86 @@ header {
   border-radius: 50%;
   color: rgba(241, 246, 1, 1);
 }
+
+
+/* contact-sec */
+
+.contact-sec{
+background-color: rgba(239, 250, 246, 1);
+max-width: 1538px;
+}
+
+.contact-sec-container{
+  max-width: 908px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact-sec-heading{
+  font-family: "Gilroy-Bold",sans-serif;
+  font-size: 22px;
+  line-height: 69px;
+}
+
+.contact-sec-form{
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-sec-details-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-sec-details-conatact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.details-name{
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text],input[type=email],textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 0px 200px 0px 0px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgba(143, 143, 143, 1);
+  background: rgba(239, 250, 246, 1);
+}
+
+form label{
+  color: rgba(143, 143, 143, 1);
+}
+
+.contact-sec-btn button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  border: none;
+  border-radius: 70px;
+  background: rgba(246, 124, 1, 1);
+  color: #fff;
+  padding: 16px 30px;
+  cursor: pointer;
+}
+
+.contact-sec-btn button i {
+  border: 1.5px solid rgba(241, 246, 1, 1);
+  border-radius: 50%;
+  color: rgba(241, 246, 1, 1);
+}
