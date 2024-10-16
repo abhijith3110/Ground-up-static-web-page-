@@ -1,17 +1,32 @@
 @font-face {
-  font-family: "Gilroy";
-  src: url("/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-family: "Gilroy-bold";
+  src: url("/asserts/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy-medium";
+  font-family: "Gilroy";
+  src: url("/asserts/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-MediumItalic";
   src: url("/asserts/fonts/gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/asserts/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-semibold";
+  src: url("/asserts/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
 }
 
 /* Header */
@@ -57,7 +72,15 @@
   justify-content: space-between;
   margin: 15px 0px;
   align-items: center;
-  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  z-index: 2;
 }
 
 /* Banner */
@@ -68,11 +91,13 @@
 
 .banner-container {
   max-width: 1538px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  margin-top: 95px;
 }
 
 .banner {
+  position: relative;
   width: 100%;
   margin: 0;
 }
@@ -91,7 +116,7 @@
 
 .banner-content {
   position: absolute;
-  top: 150px;
+  top: 90px;
   right: 100px;
   display: flex;
   flex-direction: column;
@@ -100,12 +125,9 @@
 
 .banner-content-heading-para {
   max-width: 500px;
-}
-
-.banner-content-heading-para p {
+  font-family: "Gilroy-MediumItalic", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy-medium", sans-serif;
 }
 
 .banner-content-heading-btn {
@@ -172,4 +194,120 @@
 .sub-banner-card-heading,
 .sub-banner-card-content {
   margin: 0;
+}
+
+/* Training-section */
+
+.training-sec-container {
+  background-color: rgba(239, 250, 246, 1);
+  max-width: 1538px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.training-sec {
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.training-sec-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.training-sec-header-content p {
+  color: rgba(119, 119, 119, 1);
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 580px;
+  text-align: center;
+}
+
+.training-sec-header-heading h1 {
+  font-family: "Gilroy-bold", sans-serif;
+  font-size: 43px;
+  line-height: 69px;
+}
+
+.training-sec-card-content {
+  background: #fff;
+  width: 320px;
+  padding: 20px 30px;
+  position: relative;
+}
+
+.training-sec-card-img {
+  width: 380px;
+  height: 230px;
+}
+
+.training-sec-card-img img {
+  width: 100%;
+}
+
+.training-sec-card-content-heading {
+  margin: 20px 0px;
+}
+
+.training-sec-card-content-heading h3 {
+  max-width: 264px;
+  font-size: 18px;
+  font-family: "Gilroy-semibold", sans-serif;
+  line-height: 25px;
+}
+
+.training-sec-card-content-sub-content {
+  margin-bottom: 20px;
+}
+
+.training-sec-card-content-sub-content p {
+  color: rgba(119, 119, 119, 1);
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.training-sec-card-content-btn button {
+  border: none;
+  background: transparent;
+  color: rgba(5, 169, 61, 1);
+  font-size: 17px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.training-sec-card-content-btn i {
+  color: rgba(246, 124, 1, 1);
+  border: 1.5px soild rgba(246, 124, 1, 1);
+  border-radius: 50%;
+}
+
+.training-sec-card-content-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.training-sec-card-content-mod {
+  position: absolute;
+  top: 0;
+}
+
+.training-sec-card-content-mod p {
+  background-color: rgba(5, 169, 61, 1);
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.training-sec-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }

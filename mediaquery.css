@@ -8,7 +8,7 @@
     width: 100%;
   }
 
-  .banner img {
+  .banner-img {
     display: none;
   }
 
@@ -46,10 +46,6 @@
   .banner-content-heading-btn button {
     padding: 14px 28px;
   }
-
-  .sub-banner-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -62,9 +58,12 @@
     line-height: 48px;
   }
 
+  .banner-container {
+    padding: 0px 15px;
+  }
+
   .banner-content-heading-para {
     max-width: 500px;
-    margin: 0 auto;
   }
 
   .banner-content-heading-btn button {
@@ -91,20 +90,59 @@
   }
 }
 
-@media only screen and (max-width: 474px) {
+@media only screen and (max-width: 440px) {
   .banner-content-heading h1 {
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
-  .banner-content-heading-para {
-    font-size: 18px;
-    max-width: 400px;
-    padding: 0px 0px 0px 70px;
-    line-height: 26px;
+  .banner-content {
+    top: 80px;
   }
 
   .banner-content-heading-btn button {
-    padding: 12px 20px;
+    padding: 5px 20px;
+    font-size: 10px;
+  }
+
+  .banner-content-heading-btn button i {
+    border: 1.5px solid rgba(241, 246, 1, 1);
+    border-radius: 50%;
+    color: rgba(241, 246, 1, 1);
+  }
+
+  .banner-content-heading {
+    margin: 0;
+  }
+
+  .banner-content-heading-para {
+    font-size: 12px;
+    max-width: 400px;
+  }
+
+  .sub-banner-card-heading p {
+    font-size: 18px;
+    line-height: 24.61px;
+    font-weight: 600;
+  }
+  
+  .sub-banner-card-content p {
+    font-size: 12px;
+    line-height: 20px;
+    max-width: 282px;
+    color: rgba(119, 119, 119, 1);
+  }
+
+  .sub-banner-card {
+    gap: 10px;
+  }
+
+  .sub-banner-cards {
+    margin: 450px 0px;
+  }
+
+  .header-logo{
+    width: 150px;
+    height: 50px;
   }
 }
