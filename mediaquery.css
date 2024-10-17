@@ -1,16 +1,16 @@
 @media only screen and (max-width: 1414px) {
-/* Banner */
+  /* Banner */
 
-.banner-no-content{
-  display: none;
-}
+  .banner-no-content {
+    display: none;
+  }
 
-.banner{
-  display: block;
-  text-align: center;
-}
+  .banner {
+    display: block;
+    text-align: center;
+  }
 
-.banner-content {
+  .banner-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,11 +19,11 @@
     padding: 90px 0px 0px 0px;
   }
 
-  .banner-content-heading-main{
+  .banner-content-heading-main {
     font-size: 60px;
   }
 
-  .banner-content-heading-sub{
+  .banner-content-heading-sub {
     font-size: 60px;
   }
 
@@ -38,37 +38,24 @@
     text-align: center;
   }
 
-  .banner-content-heading-paras{
+  .banner-content-heading-paras {
     display: flex;
     flex-direction: column;
     margin: 30px 0px;
     gap: 20px;
   }
 
-  
-
-
-  .sub-banner-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 120px 0px;
-    gap: 20px;
-  }
-
   .training-sec-cards {
     display: none;
-}
-
-.about-sec-container{
-  display: none;
-}
-
   }
 
+  .about-sec-container {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
-
-/* Header */
+  /* Header */
 
   .header-nav-bar ul {
     gap: 40px;
@@ -81,7 +68,7 @@
     align-items: center;
   }
 
-/* Banner */
+  /* Banner */
 
   .banner-content-heading h1 {
     font-size: 50px;
@@ -96,20 +83,35 @@
   .banner-content-heading-btn button {
     padding: 14px 28px;
   }
+
+  /* Sub-Banner */
+
+  .sub-banner-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-banner-card{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-banner-card-content{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
- /* Header  */
+  /* Header  */
 
   .header-nav-bar {
     display: none;
   }
 
-/* Banner */
-.banner-content-heading,.banner-content-heading-paras{
-  padding: 0px 15px;
-}
+  /* Banner */
+  .banner-content-heading,
+  .banner-content-heading-paras {
+    padding: 0px 15px;
+  }
   .banner-content-heading h1 {
     font-size: 45px;
     line-height: 48px;
@@ -133,11 +135,16 @@
   .banner-content-heading-main {
     margin: 0;
   }
+
+  /* Sub-Banner */
+
+  .sub-banner-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media only screen and (max-width: 460px) {
-
-/* header */
+  /* header */
 
   .header-logo {
     width: 180px;
@@ -164,7 +171,7 @@
     border-radius: 50%;
     color: rgba(241, 246, 1, 1);
   }
-  
+
   .banner-content-heading {
     margin: 0;
   }
@@ -173,22 +180,23 @@
     font-size: 12px;
     max-width: 400px;
   }
+
+  /* Sub-Banner */
   
   .sub-banner-card-heading p {
     font-size: 18px;
     line-height: 24.61px;
     font-weight: 600;
   }
-  
+
   .sub-banner-card-content p {
     font-size: 12px;
     line-height: 20px;
     max-width: 282px;
     color: rgba(119, 119, 119, 1);
   }
-  
+
   .sub-banner-card {
     gap: 10px;
   }
-  
 }
