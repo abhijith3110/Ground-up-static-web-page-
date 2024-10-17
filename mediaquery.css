@@ -45,8 +45,12 @@
     gap: 20px;
   }
 
+  /* training-section */
+
   .training-sec-cards {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .about-sec-container {
@@ -98,6 +102,14 @@
   .sub-banner-card-content{
     text-align: center;
   }
+
+  /* training-section */
+
+  .training-sec-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -141,6 +153,42 @@
   .sub-banner-cards {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* Training-section */
+
+  .training-sec-card-content {
+    max-width: 250px;
+  }
+  
+  .training-sec-card-img {
+    width: 280px;
+    height: 174px;
+  }
+  
+  .training-sec-card-content-heading h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .training-sec-card-content-sub-content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  .training-sec-card-content-mod p {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .training-sec {
+    padding: 0px;
+  }
+
+  .training-sec-header-heading h1 {
+    font-size: 36px;
+    line-height: 70px;
+}
+  
 }
 
 @media only screen and (max-width: 460px) {
@@ -182,7 +230,7 @@
   }
 
   /* Sub-Banner */
-  
+
   .sub-banner-card-heading p {
     font-size: 18px;
     line-height: 24.61px;
@@ -199,4 +247,10 @@
   .sub-banner-card {
     gap: 10px;
   }
+
+  /* traning-section */
+
+  .training-sec-header-heading h1 {
+    font-size: 30px;
+}
 }

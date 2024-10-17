@@ -253,7 +253,7 @@
 
 .training-sec-card-content {
   background: #fff;
-  width: 320px;
+  max-width: 320px;
   padding: 20px 30px;
   position: relative;
 }
