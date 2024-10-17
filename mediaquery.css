@@ -110,7 +110,7 @@
   /* About-section */
 
   .about-sec-image {
-    height: 300px;
+    height: 400px;
   }
   
   .about-sec-image img {
@@ -186,7 +186,7 @@
   }
   
   .training-sec-card-img {
-    width: 280px;
+    width: 309px;
     height: 174px;
   }
   
@@ -206,7 +206,7 @@
   }
 
   .training-sec {
-    padding: 0px;
+    padding: 20px;
   }
 
   .training-sec-header-heading h1 {
@@ -236,6 +236,29 @@ margin: 60px 0px;
 .about-sec-content-sub-content p{
   text-align: center;
   margin: 30px;
+}
+
+/* Contact-section */
+
+.contact-sec-details-name, .contact-sec-details-conatact {
+  flex-direction: column;
+  gap: 25px;
+  align-items: normal;
+}
+
+.contact-sec-heading h1{
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.contact-sec-btn button {
+  gap: 5px;
+  padding: 10px 30px;
+}
+
+.contact-sec-btn  {
+ margin: 0 auto;
 }
   
 }
@@ -301,6 +324,17 @@ margin: 60px 0px;
 
   .training-sec-header-heading h1 {
     font-size: 30px;
+}
+
+/* trainig-section */
+
+.training-sec-card-img {
+  width: 278px;
+  height: 174px;
+}
+
+.training-sec-card-content {
+  max-width: 219px;
 }
 
 /* About-Section */
