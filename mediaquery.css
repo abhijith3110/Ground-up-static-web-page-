@@ -5,20 +5,26 @@
   display: none;
 }
 
+.banner{
+  display: block;
+  text-align: center;
+}
+
 .banner-content {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0;
+    padding: 90px 0px 0px 0px;
   }
 
   .banner-content-heading-main{
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .banner-content-heading-sub{
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .banner-content-heading {
@@ -40,6 +46,8 @@
   }
 
   
+
+
   .sub-banner-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -66,10 +74,17 @@
     gap: 40px;
   }
 
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 12px 0px;
+    align-items: center;
+  }
+
 /* Banner */
 
   .banner-content-heading h1 {
-    font-size: 46px;
+    font-size: 50px;
   }
 
   .banner-content-heading-para {
@@ -92,14 +107,16 @@
   }
 
 /* Banner */
-
+.banner-content-heading,.banner-content-heading-paras{
+  padding: 0px 15px;
+}
   .banner-content-heading h1 {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 48px;
   }
 
   .banner-content-heading-para {
-    max-width: 500px;
+    max-width: 640px;
   }
 
   .banner-content-heading-btn button {
@@ -118,7 +135,7 @@
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 460px) {
 
 /* header */
 
