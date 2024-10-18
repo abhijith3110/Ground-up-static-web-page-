@@ -37,12 +37,15 @@
 
 /* Header */
 
-.header-container {
-  /* width: 100%;
+header {
+  width: 100%;
   position: fixed;
   top: 0;
   background: #ffffff;
-  z-index: 2; */
+  z-index: 2;
+}
+
+.header-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
@@ -97,6 +100,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("/asserts/images/Rectangle\ 2.jpg");
+  margin-top: 84px;
 }
 
 .banner {
